@@ -117,10 +117,6 @@ function listenToColorPaletteSection() {
   colorPaletteSection.addEventListener("click", paintThePixelBoardTable);
 }
 
-function callPaintPixel(event) {
-  paintPixel(e);
-}
-
 function listenToPixelBoardTable() {
   const pixelBoardTable = document.querySelector("#pixel-board");
 
@@ -129,7 +125,6 @@ function listenToPixelBoardTable() {
   pixelBoardTable.addEventListener("mouseover", (event) => {
     if (event.which === 2) {
       paintPixel(event);
-      console.log(event.which);
     }
   });
 }
